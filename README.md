@@ -1,4 +1,4 @@
-# 👑 Sanns' Royal Sleeping Kingdom & Posh Sloth Laboratory 🎀✨
+# 👑 ' Royal Sleeping Kingdom &  Sloth Laboratory 🎀✨
 
 An unhinged, ultra-cute, posh pink-girly interactive tribute to **Sanvitha (Sanns)** — celebrating her legendary horizontal energy-saving lifestyle, sleep mastery, and supreme friendship!
 
