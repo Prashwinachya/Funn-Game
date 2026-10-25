@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>👑 Sanns' Royal Sleeping Kingdom & Posh Sloth Laboratory 🎀✨</title>
-  <meta name="description" content="An elegant, posh, ultra-chic pink interactive tribute to Sanvitha (Sanns): Supreme Princess of Naps, Destroyer of Alarms, and Certified Bestie.">
+  <title>Sanns' Sleep Lab | The Official Sanvitha Status Check</title>
+  <meta name="description" content="A fun, affectionate tribute to Sanvitha (Sanns): professional sleeper, alarm snoozer, and unbeatable best friend.">
 
   <!-- Google Fonts: Posh Editorial & Luxury Typefaces -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1323,28 +1323,28 @@
   <!-- Confetti Canvas -->
   <canvas id="pinkConfettiCanvas" aria-hidden="true"></canvas>
 
-  <!-- TOP PRINCESS HUD -->
+  <!-- TOP HUD -->
   <header class="top-hud">
-    <div class="brand-crown-group" id="princessEasterEggTrigger" title="Tap crown 5 times for the Royal Sloth Secret!">
-      <span class="crown-icon">👑</span>
+    <div class="brand-crown-group" id="princessEasterEggTrigger" title="Tap 5 times for a secret!">
+      <span class="crown-icon">😴</span>
       <div class="brand-title-wrap">
-        <span class="brand-text">Sanns Diary</span>
-        <span class="brand-subtitle">The Posh Sleep Sanctuary 🎀</span>
+        <span class="brand-text">Sanns Sleep Lab</span>
+        <span class="brand-subtitle">Sanvitha's Energy Saving HQ</span>
       </div>
     </div>
 
     <div class="hud-meters">
-      <div class="meter-pill" title="Princess Energy Meter">
-        <span>✨ ENERGY:</span>
+      <div class="meter-pill" title="Battery Meter">
+        <span>BATTERY:</span>
         <div class="meter-track">
           <div class="meter-fill" id="hudEnergyFill"></div>
         </div>
-        <span id="energyLabel" style="font-size: 0.75rem; color: var(--couture-pink);">999%</span>
+        <span id="energyLabel" style="font-size: 0.75rem; color: var(--couture-pink);">1% (Snoozing)</span>
       </div>
     </div>
 
     <div class="hud-actions">
-      <button class="hud-round-btn" id="audioToggleBtn" aria-label="Toggle Girly Sound Effects">
+      <button class="hud-round-btn" id="audioToggleBtn" aria-label="Toggle Sound Effects">
         <span id="audioIcon">🔊</span>
         <span id="audioText">Sound ON</span>
       </button>
@@ -1355,39 +1355,39 @@
   </header>
 
   <!-- STAGE PROGRESS RIBBON -->
-  <nav class="ribbon-progress" aria-label="Royal Progress">
+  <nav class="ribbon-progress" aria-label="Progress">
     <div class="ribbon-track-back"></div>
     <div class="ribbon-track-front" id="ribbonTrackFront"></div>
-    <div class="step-heart active" data-step="1">🎀</div>
-    <div class="step-heart" data-step="2">🔒</div>
-    <div class="step-heart" data-step="3">🧠</div>
-    <div class="step-heart" data-step="4">🎮</div>
-    <div class="step-heart" data-step="5">📊</div>
-    <div class="step-heart" data-step="6">👑</div>
+    <div class="step-heart active" data-step="1">1</div>
+    <div class="step-heart" data-step="2">2</div>
+    <div class="step-heart" data-step="3">3</div>
+    <div class="step-heart" data-step="4">4</div>
+    <div class="step-heart" data-step="5">5</div>
+    <div class="step-heart" data-step="6">6</div>
   </nav>
 
   <!-- MAIN APP CONTAINER -->
   <main class="app-main" id="mainContainer">
 
     <!-- ======================================================================
-         STAGE 1: EDITORIAL TICKER & SLEEK TERMINAL INTRO
+         STAGE 1: INTRO & TERMINAL
          ====================================================================== -->
     <section class="scrapbook-card active" id="stage1" aria-labelledby="stage1Heading">
-      <div class="cute-tag">💖 Royal Telemetry Alert</div>
+      <div class="cute-tag">Friendship Diagnostics</div>
       <h1 class="princess-heading" id="stage1Heading">
-        HER ROYAL HIGHNESS: <br>
+        Case File: <br>
         <span style="color: var(--couture-pink);">Sanvitha (Sanns)</span>
-        <span class="cursive-accent">Supreme Princess of Bedtime</span>
+        <span class="cursive-accent">Professional Bed Connoisseur</span>
       </h1>
 
       <!-- Breaking News Ticker -->
       <div class="breaking-news-tape">
-        <span style="font-weight: 600; color: var(--couture-pink);">🚨 BREAKING MEME:</span>
-        <span id="breakingTickerText">Sanns has been reported horizontal for 18 consecutive hours!</span>
+        <span style="font-weight: 600; color: var(--couture-pink);">UPDATE:</span>
+        <span id="breakingTickerText">Sanns has been horizontal for 16 hours. When asked for comment, she said "5 more mins."</span>
       </div>
 
       <p class="desc-girly">
-        Welcome to the supreme diagnostic suite. We are conducting an urgent scientific investigation to determine if our favorite princess Sanns is awake, asleep, or merely ignoring all human responsibilities.
+        A completely serious, highly scientific investigation to check if our good friend Sanns is currently awake, or if she dropped her phone on her face and fell back asleep.
       </p>
 
       <div class="pink-terminal" aria-live="polite">
@@ -1396,7 +1396,7 @@
           <span class="term-gem gem-yellow"></span>
           <span class="term-gem gem-purple"></span>
           <span style="font-size: 0.78rem; font-weight: 500; color: #f472b6; margin-left: 6px;">
-            SANNS_SLOTH_SYSTEM_v5.0.pink
+            sanns_status_check.log
           </span>
         </div>
 
@@ -1406,7 +1406,7 @@
 
         <div class="pink-loader-container">
           <div class="pink-loader-labels">
-            <span id="pinkLoaderStatus">Fluffing royal pillows...</span>
+            <span id="pinkLoaderStatus">Checking if Sanns is awake...</span>
             <span id="pinkLoaderPct">0%</span>
           </div>
           <div class="pink-loader-track">
@@ -1417,26 +1417,25 @@
 
       <div style="text-align: center; margin-top: 10px;">
         <button class="btn-pink btn-gold" id="startMissionBtn" disabled>
-          <span>✨ INITIATE PRINCESS AWAKENING ✨</span>
+          <span>START THE WAKE-UP CHECK →</span>
         </button>
       </div>
     </section>
 
     <!-- ======================================================================
-         STAGE 2: REFINED CAPTCHA SECURITY CHECK
+         STAGE 2: CAPTCHA SECURITY CHECK
          ====================================================================== -->
     <section class="scrapbook-card" id="stage2" aria-labelledby="stage2Heading">
-      <div class="cute-tag">🔒 Anti-Sloth Verification</div>
+      <div class="cute-tag">Quick Verification</div>
       <h2 class="princess-heading" id="stage2Heading">
-        Princess Check: <span style="color: var(--couture-pink);">Are You Conscious?</span>
+        Security Check: <span style="color: var(--couture-pink);">Are You Actually Awake?</span>
       </h2>
       <p class="desc-girly">
-        Before entering the royal chambers, palace security must verify that Sanns hasn't dropped her phone on her face and fallen asleep mid-scroll.
+        Before you go any further, prove you're not half-asleep under three blankets right now.
       </p>
 
       <div class="princess-captcha-frame">
         <div class="captcha-title-pink">
-          <span>🧠</span>
           <span>SELECT ALL REASONS WHY SANNS IS STILL IN BED:</span>
         </div>
 
@@ -1448,11 +1447,11 @@
 
         <div class="hold-pink-wrap">
           <p style="font-size: 0.88rem; color: var(--velvet-plum); font-weight: 500; margin-bottom: 12px;">
-            Hold the button for 2 seconds to prove brain activity!
+            Hold the button for 2 seconds to prove brain activity:
           </p>
           <button class="btn-pink hold-pink-btn" id="holdAwakeBtn">
             <div class="hold-pink-fill" id="holdPinkFill"></div>
-            <span id="holdPinkText">HOLD TO PROVE YOU'RE CONSCIOUS 😴</span>
+            <span id="holdPinkText">HOLD TO PROVE YOU'RE AWAKE 😴</span>
           </button>
         </div>
       </div>
@@ -1460,20 +1459,20 @@
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <button class="btn-soft" onclick="app.prevStage()">← Back</button>
         <button class="btn-pink" id="verifyCaptchaNextBtn" disabled>
-          <span>ENTER THE QUIZ CHAMBER 💖</span>
+          <span>ON TO THE QUESTIONS →</span>
         </button>
       </div>
     </section>
 
     <!-- ======================================================================
-         STAGE 3: THE CHIC QUIZ (8 QUESTIONS)
+         STAGE 3: THE QUIZ (8 QUESTIONS)
          ====================================================================== -->
     <section class="scrapbook-card" id="stage3" aria-labelledby="stage3Heading">
       <div class="quiz-frame">
-        <div class="quiz-step-badge" id="quizBadgeCounter">👑 QUESTION 1 OF 8</div>
+        <div class="quiz-step-badge" id="quizBadgeCounter">QUESTION 1 OF 8</div>
         
         <div class="quiz-question-box">
-          <h2 class="quiz-q-title" id="quizQuestionTitle">Loading royal question...</h2>
+          <h2 class="quiz-q-title" id="quizQuestionTitle">Loading question...</h2>
         </div>
 
         <!-- Standard Options Container -->
@@ -1482,13 +1481,13 @@
         <!-- Emergency Dodging Buttons for Question 8 -->
         <div class="emergency-dodging-wrap" id="emergencyDodgingWrap" style="display: none;">
           <button class="btn-pink growing-bestie-btn" id="bestieNapBtn">
-            Can my bestie come to bed too? (FOR A NAP 😭💖)
+            Can my bestie just come over and nap too?
           </button>
           <button class="btn-soft fleeing-bed-btn" id="fleeingBedBtn">
-            Bed. Sorry, bestie. 🛌💨
+            Bed. Sorry, bestie.
           </button>
           <button class="btn-soft" id="compromiseBtn">
-            Bestie, then immediately go to bed. 😴
+            Hang out for 10 mins then sprint back to bed.
           </button>
         </div>
 
@@ -1497,33 +1496,33 @@
 
         <div style="display: flex; justify-content: flex-end; margin-top: 24px;">
           <button class="btn-pink" id="quizNextQuestionBtn" style="display: none;">
-            <span>NEXT TRUTH 💅</span>
+            <span>NEXT QUESTION →</span>
           </button>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         STAGE 4: POSH MINI-GAMES ARCADE
+         STAGE 4: MINI-GAMES ARCADE
          ====================================================================== -->
     <section class="scrapbook-card" id="stage4" aria-labelledby="stage4Heading">
-      <div class="cute-tag">🎮 The Sloth Olympiad</div>
+      <div class="cute-tag">Mini-Challenges</div>
       <h2 class="princess-heading" id="stage4Heading">
-        Pink Princess Mini-Games
+        The Sanns Reflex Test
       </h2>
       <p class="desc-girly">
-        Complete these 3 micro-challenges to test if Sanns has any physical reflexes while under the spell of cozy blankets.
+        Three quick challenges to see if your motor skills still exist under that blanket.
       </p>
 
       <div class="arcade-pink-tabs" role="tablist">
         <button class="pink-tab-btn active" data-game="1" role="tab" aria-selected="true">
-          <span>💖 1. Catch Sleepy Hearts</span>
+          <span>1. Catch Sleepies</span>
         </button>
         <button class="pink-tab-btn" data-game="2" role="tab" aria-selected="false">
-          <span>⏰ 2. Wake Sanns Up</span>
+          <span>2. Wake Sanns Up</span>
         </button>
         <button class="pink-tab-btn" data-game="3" role="tab" aria-selected="false">
-          <span>🛏️ 3. Catch The Pillow</span>
+          <span>3. Catch The Pillow</span>
         </button>
       </div>
 
@@ -1531,11 +1530,11 @@
         <!-- HUD Overlay inside Arena -->
         <div class="arena-pink-hud">
           <div class="pink-hud-pill">
-            <span>⏱️ TIME:</span>
+            <span>TIME:</span>
             <span id="arenaTimerDisplay" style="color: var(--couture-pink); font-weight: 600;">15s</span>
           </div>
           <div class="pink-hud-pill">
-            <span>⭐ SCORE:</span>
+            <span>SCORE:</span>
             <span id="arenaScoreDisplay" style="color: var(--champagne-gold); font-weight: 600;">0</span>
           </div>
         </div>
@@ -1546,30 +1545,30 @@
         <!-- GAME 2 VIEW: Wake Sanns Up (Clicker) -->
         <div id="game2View" class="wake-sanns-stage" style="display: none;">
           <div class="sanns-princess-duvet" id="princessDuvetAvatar">😴</div>
-          <div class="princess-snore-bubble" id="princessSnoreDialogue">"Zzz... Just 5 more hours..."</div>
+          <div class="princess-snore-bubble" id="princessSnoreDialogue">"5 more minutes..."</div>
           <div class="princess-meter-track">
             <div class="princess-meter-fill" id="princessWakeupFill"></div>
           </div>
           <button class="btn-pink btn-gold" id="spamPrincessAlarmBtn">
-            🔔 SPAM ALARM TO WAKE PRINCESS!
+            SPAM ALARM TO WAKE HER UP
           </button>
         </div>
 
         <!-- GAME 3 VIEW: Catch Satin Pillow -->
         <div id="game3View" style="width: 100%; height: 100%; position: absolute; inset: 0; display: none;">
-          <div class="satin-pillow-target" id="satinPillowTarget" title="Catch me if you can!">🛏️🎀</div>
+          <div class="satin-pillow-target" id="satinPillowTarget" title="Catch me if you can!">🛏️</div>
         </div>
 
         <!-- Result Overlay inside Arena -->
         <div class="arena-result-modal" id="arenaResultModal">
           <h3 id="arenaResultTitle" style="font-family: var(--font-editorial); font-size: 2.2rem; font-weight: 600; color: var(--velvet-plum); margin-bottom: 6px;">
-            ROYAL PERFORMANCE COMPLETE! 💖
+            Challenge Complete!
           </h3>
           <p id="arenaResultDesc" style="color: #633355; font-size: 1rem; margin-bottom: 22px; max-width: 400px;">
-            Your bed-loving score has been certified by palace officials!
+            Your reflexes have been tested and approved by your best friend.
           </p>
           <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-            <button class="btn-soft" id="replayArenaBtn">🔄 Play Again</button>
+            <button class="btn-soft" id="replayArenaBtn">Play Again</button>
             <button class="btn-pink" id="nextArenaChallengeBtn">Next Challenge →</button>
           </div>
         </div>
@@ -1578,98 +1577,99 @@
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px;">
         <button class="btn-soft" onclick="app.prevStage()">← Back</button>
         <button class="btn-pink" id="proceedToStatsBtn">
-          <span>VIEW SCIENTIFIC ANALYSIS 📊</span>
+          <span>SEE YOUR SLEEP STATS →</span>
         </button>
       </div>
     </section>
 
     <!-- ======================================================================
-         STAGE 5: POSH SCIENTIFIC STATS & DOSSIER
+         STAGE 5: SCIENTIFIC STATS & DOSSIER
          ====================================================================== -->
     <section class="scrapbook-card" id="stage5" aria-labelledby="stage5Heading">
-      <div class="cute-tag">📊 Forensic Princess Telemetry</div>
+      <div class="cute-tag">Sleep Dossier</div>
       <h2 class="princess-heading" id="stage5Heading">
-        Scientific Sloth Dossier
+        The Official Sanns Sleep Report
       </h2>
       <p class="desc-girly">
-        After extensive palace satellite surveillance and friendship analysis, the United Sloth Federation has released this classified report on Sanns.
+        After extensive observation and friendship analysis, here are the cold hard facts about your daily routine.
       </p>
 
       <div class="royal-certificate-box">
-        <div class="wax-seal">APPROVED 100%</div>
+        <div class="wax-seal">100% FACT</div>
         <h3 style="font-family: var(--font-editorial); font-size: 1.8rem; font-weight: 600; color: var(--velvet-plum); margin-bottom: 4px;">
-          Certified Master of Horizontal Physics
+          Certified Master of the Horizontal Lifestyle
         </h3>
         <p style="font-size: 0.95rem; color: #6b335a; font-weight: 400;">
-          Awarded to: <strong>Sanvitha "Sanns"</strong> for demonstrating extraordinary dedication to staying under blankets at all costs.
+          Awarded to: <strong>Sanvitha "Sanns"</strong> for groundbreaking dedication to resting under blankets at all costs.
         </p>
       </div>
 
       <div class="girly-stats-grid">
         <div class="girly-stat-card">
-          <div class="stat-ribbon-tag">😴 Nap Affinity</div>
+          <div class="stat-ribbon-tag">Daily Sleep Affinity</div>
           <div class="stat-giant-num"><span class="counter" data-target="999">0</span>%</div>
-          <div class="stat-caption">Defies all known laws of physics</div>
+          <div class="stat-caption">Breaks modern laws of physics</div>
         </div>
 
         <div class="girly-stat-card">
-          <div class="stat-ribbon-tag">📉 Productivity Detected</div>
+          <div class="stat-ribbon-tag">Productivity Level</div>
           <div class="stat-giant-num" style="color: #fb7185;">404</div>
-          <div class="stat-caption">Energy conserved for future nap</div>
+          <div class="stat-caption">Energy saved for the next nap</div>
         </div>
 
         <div class="girly-stat-card">
-          <div class="stat-ribbon-tag">⏰ Alarms Ignored</div>
+          <div class="stat-ribbon-tag">Alarms Snoozed</div>
           <div class="stat-giant-num"><span class="counter" data-target="24">0</span>x</div>
-          <div class="stat-caption">Average snoozes before consciousness</div>
+          <div class="stat-caption">Average before opening one eye</div>
         </div>
 
         <div class="girly-stat-card">
-          <div class="stat-ribbon-tag">💖 Bestie Rating</div>
+          <div class="stat-ribbon-tag">Friendship Rating</div>
           <div class="stat-giant-num" style="color: var(--rose-accent);"><span class="counter" data-target="100">0</span>%</div>
-          <div class="stat-caption">Certified Irreplaceable & Iconic</div>
+          <div class="stat-caption">Certified genuine, irreplaceable bestie</div>
         </div>
       </div>
 
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <button class="btn-soft" onclick="app.prevStage()">← Back</button>
         <button class="btn-pink btn-gold" onclick="app.goToStage(6)">
-          <span>REVEAL ROYAL CORONATION 👑✨</span>
+          <span>SEE THE FINAL MESSAGE →</span>
         </button>
       </div>
     </section>
 
     <!-- ======================================================================
-         STAGE 6: GRAND FINALE CORONATION & LETTER
+         STAGE 6: GRAND FINALE & LETTER
          ====================================================================== -->
     <section class="scrapbook-card" id="stage6" aria-labelledby="stage6Heading">
-      <div class="cute-tag">👑 The Grand Coronation</div>
+      <div class="cute-tag">From Your Best Friend</div>
       
-      <!-- Official Scientific Title Banner -->
+      <!-- Official Title Banner -->
       <div class="royal-title-banner">
-        <div style="font-size: 2.2rem; margin-bottom: 6px;">👑✨🎀</div>
+        <div style="font-size: 1.8rem; margin-bottom: 6px;">😴✨💖</div>
         <div class="royal-title-text" id="royalTitleDisplay">
-          “SANVITHA (SANNS) — THE SUPREME PINK PRINCESS, CEO OF NAPS, DESTROYER OF PRODUCTIVITY, AND CERTIFIED BESTIE.”
+          SANVITHA (SANNS)
+          <span style="font-size: 1.1rem; font-weight: 500; display: block; margin-top: 4px; color: var(--rose-accent);">CEO of Naps, Procrastination Legend, and Certified Best Friend</span>
         </div>
       </div>
 
       <!-- Sincere & Affectionate Letter -->
       <div class="girly-letter-card">
-        <div class="diary-washi-tape">A LETTER FROM YOUR BEST FRIEND 💖</div>
+        <div class="diary-washi-tape">A QUICK NOTE FOR YOU</div>
         <p class="girly-letter-body" id="girlyLetterBody">
           <!-- Injected via CONFIG -->
         </p>
         <div class="girly-letter-signoff">
-          Forever your favorite bestie 💖✨
+          — Your favorite best friend
         </div>
       </div>
 
       <!-- Personalized Coupons -->
       <h3 style="font-family: var(--font-editorial); font-size: 1.65rem; font-weight: 600; color: var(--velvet-plum); margin-bottom: 12px;">
-        🎟️ Official Sanns Royal Friendship Coupons
+        Official Sanns Friendship Vouchers
       </h3>
       <p style="color: #633355; font-size: 0.92rem; margin-bottom: 18px;">
-        Tap any coupon below to claim your permanent, non-negotiable friendship privileges:
+        Tap any coupon to claim your permanent, non-negotiable friendship privileges:
       </p>
 
       <div class="girly-coupons-grid" id="girlyCouponsGrid">
@@ -1678,28 +1678,28 @@
 
       <div style="text-align: center; margin-top: 30px; display: flex; flex-direction: column; align-items: center; gap: 14px;">
         <button class="btn-pink btn-gold" id="explodePrincessConfettiBtn" style="font-size: 1.15rem; padding: 16px 36px;">
-          <span>🎉 SHOWER SANNS WITH LOVE & GLITTER! 🎉</span>
+          <span>SEND SANNS SOME LOVE 🎉</span>
         </button>
         <button class="btn-soft" onclick="app.restartExperience()">
-          <span>🔄 Replay The Royal Journey (Nap Again)</span>
+          <span>Restart from the Beginning</span>
         </button>
       </div>
     </section>
 
   </main>
 
-  <!-- EASTER EGG SECRET PRINCESS MODAL -->
+  <!-- EASTER EGG MODAL -->
   <div class="pink-modal-backdrop" id="princessEasterEggModal" role="dialog" aria-modal="true" aria-labelledby="easterEggModalTitle">
     <div class="pink-modal-content">
-      <div style="font-size: 3.5rem; margin-bottom: 10px;">👑🦥💖</div>
+      <div style="font-size: 2.8rem; margin-bottom: 10px;">😴✨</div>
       <h3 id="easterEggModalTitle" style="font-family: var(--font-editorial); font-size: 2.1rem; font-weight: 600; color: var(--velvet-plum); margin-bottom: 8px;">
-        SECRET PRINCESS SLOTH MODE!
+        Secret Nap Mode Unlocked
       </h3>
       <p style="color: #633355; font-size: 0.95rem; line-height: 1.6; margin-bottom: 22px;">
-        You found the secret crown easter egg! By royal proclamation, Sanvitha is officially granted 48 hours of immunity from all alarms, chores, early morning messages, and adult responsibilities!
+        You found the secret button! As your best friend, I officially excuse you from answering texts before noon, doing chores, and setting morning alarms for the next 48 hours. Go back to sleep!
       </p>
       <button class="btn-pink" onclick="document.getElementById('princessEasterEggModal').classList.remove('active')">
-        ACCEPT ROYAL IMMUNITY 💅
+        ACCEPT NAP PERMISSION
       </button>
     </div>
   </div>
@@ -1716,33 +1716,33 @@
       recipient: {
         fullName: "Sanvitha",
         nickname: "Sanns",
-        royalTitle: "SANVITHA (SANNS) — THE SUPREME PINK PRINCESS, CEO OF NAPS, DESTROYER OF PRODUCTIVITY, AND CERTIFIED BESTIE.",
+        royalTitle: "SANVITHA (SANNS) — CEO of Naps, Procrastination Legend, and Certified Best Friend",
         favoriteActivity: "Sleeping through world events",
         friendshipScore: "100% Certified Unbeatable"
       },
 
       // Stage 1 terminal messages
       terminalLogs: [
-        { text: "Connecting to Sanns' Royal Cloud Chamber...", badge: "PINK", badgeText: "ROYAL" },
-        { text: "Scanning current posture... [Result: 180° Horizontal Supreme]", badge: "GOLD", badgeText: "SCAN" },
-        { text: "Blanket Gravitational Pull: 9.81 m/s² ➔ CRITICAL: 99.4 m/s²", badge: "HOT", badgeText: "WARN" },
-        { text: "Searching for signs of productivity... [ERROR 404: Not Found]", badge: "HOT", badgeText: "404" },
-        { text: "Princess Energy: Running at 999% cozy slumber efficiency.", badge: "GOLD", badgeText: "STATUS" },
-        { text: "Sweetheart telemetry verified: 100% iconic, hilarious, and loved.", badge: "PINK", badgeText: "BESTIE" },
-        { text: "Royal Sloth localized: Sanns is currently wrapped like a burrito.", badge: "GOLD", badgeText: "READY" }
+        { text: "Pinging Sanns' phone... [No answer, phone permanently on silent]", badge: "PINK", badgeText: "PING" },
+        { text: "Scanning bed coordinates... [Result: 100% cocooned under blanket]", badge: "GOLD", badgeText: "SCAN" },
+        { text: "Alarm audit: 8 alarms scheduled 5 minutes apart, all snoozed", badge: "HOT", badgeText: "ALARMS" },
+        { text: "Searching for signs of getting up... [Error 404: Not found]", badge: "HOT", badgeText: "404" },
+        { text: "Vital signs: Zero intention to leave bed before 1:00 PM", badge: "GOLD", badgeText: "STATUS" },
+        { text: "Friendship radar: 100% verified favorite person", badge: "PINK", badgeText: "BESTIE" },
+        { text: "Target located: Sanns is scrolling reels with one eye open", badge: "GOLD", badgeText: "READY" }
       ],
 
       // Stage 2 Captcha Items
       captchaItems: [
         { id: "c1", icon: "🛌", label: "Bed is too cozy", correct: true },
-        { id: "c2", icon: "🥱", label: "Woke up tired from sleeping", correct: true },
-        { id: "c3", icon: "🏃‍♀️", label: "Running a 5K marathon", correct: false, roast: "A 5K marathon?! Be serious! Sanns doesn't even walk to the kitchen without emotional preparation." },
-        { id: "c4", icon: "🧋", label: "Craving Boba in bed", correct: true },
-        { id: "c5", icon: "⏰", label: "Waking up at 6:00 AM", correct: false, roast: "6:00 AM?! Sanns' eyes don't even recognize natural sunlight before 1:00 PM!" },
-        { id: "c6", icon: "😴", label: "Said 'just 5 more mins'", correct: true },
-        { id: "c7", icon: "🧹", label: "Deep cleaning the house", correct: false, roast: "Deep cleaning?! That would require standing vertically. Denied!" },
-        { id: "c8", icon: "📱", label: "Scrolling reels horizontally", correct: true },
-        { id: "c9", icon: "🧸", label: "Aggressively hugging pillow", correct: true }
+        { id: "c2", icon: "🥱", label: "Tired from sleeping so much", correct: true },
+        { id: "c3", icon: "🏃‍♀️", label: "Running a 5k for fun", correct: false, roast: "Be honest. You don't even walk to the kitchen without 10 minutes of mental prep." },
+        { id: "c4", icon: "🧋", label: "Thinking about snacks from bed", correct: true },
+        { id: "c5", icon: "⏰", label: "Waking up at 6 AM willingly", correct: false, roast: "6 AM? Sanns doesn't even know what the morning sun looks like in real life." },
+        { id: "c6", icon: "😴", label: "Said 'just 5 more mins' 2 hours ago", correct: true },
+        { id: "c7", icon: "🧹", label: "Productively cleaning the room", correct: false, roast: "Cleaning? That would require standing up on two feet. Not happening today." },
+        { id: "c8", icon: "📱", label: "Holding phone horizontally in bed", correct: true },
+        { id: "c9", icon: "🧸", label: "Refusing to let go of the pillow", correct: true }
       ],
 
       // Stage 3: The 8 RIDICULOUS & FUNNY QUESTIONS requested by user!
@@ -1750,105 +1750,105 @@
         {
           id: 1,
           type: "standard",
-          question: "Sanns, breaking news! You've been awake for 17 minutes. How are you feeling?",
+          question: "You just woke up after 11 hours of sleep. What is your immediate next move?",
           options: [
-            { text: "I deserve a national award. 🏅", correct: false, roast: "False! A national award requires paperwork. Sanns would rather take a nap!" },
-            { text: "Exhausted. Need 14 more hours. 😴", correct: true, roast: "BINGO! 17 minutes is basically a full marathon in Sanns years. Back to bed immediately!" },
-            { text: "Who authorized this much productivity? 🚨", correct: false, roast: "Nobody authorized it! But you still need to uncover the ultimate Sanns truth." }
+            { text: "Sit up and take a breather from sleeping so hard", correct: false, roast: "Close, but sitting up is too much cardio for this early." },
+            { text: "Calculate how much longer I can sleep if I cancel all my plans", correct: true, roast: "Exactly. The mental math of canceling plans is the only math you excel at before noon." },
+            { text: "Check my notifications and immediately reply to everyone", correct: false, roast: "Reply immediately? You leave people on delivered for three business days." }
           ]
         },
         {
           id: 2,
           type: "standard",
-          question: "If sleeping were an Olympic sport, what medal would you win?",
+          question: "Your alarm rings at 8:00 AM. What actually happens?",
           options: [
-            { text: "Gold, obviously. 🥇", correct: false, roast: "Too modest! Sanns wouldn't settle for merely one medal." },
-            { text: "Gold, silver AND bronze. 🏅✨", correct: false, roast: "Close, but Sanns' nap ambition is even more unhinged!" },
-            { text: "The Olympics would be renamed after me. 👑", correct: true, roast: "100% CORRECT! Welcome to the 2028 Sanns Games: 100m Bed Dash and Synchronized Snoozing." }
+            { text: "I turn it off in my sleep without any memory of doing so", correct: true, roast: "Spot on. Your subconscious will literally commit crimes just to keep snoozing." },
+            { text: "I jump out of bed feeling refreshed and energized", correct: false, roast: "Who are you trying to convince right now? Definitely not me." },
+            { text: "I negotiate with myself for another 3 hours", correct: false, roast: "A solid effort, but your hand shut that alarm down before your brain even booted up." }
           ]
         },
         {
           id: 3,
           type: "standard",
-          question: "Your bed calls you at 2 PM. What do you do?",
+          question: "If you had to choose between leaving the house on a weekend or staying in bed all day, what's your excuse?",
           options: [
-            { text: "Answer immediately. That's my soulmate. 💖", correct: false, roast: "A romantic thought, but Sanns doesn't even need to answer—she's already in bed!" },
-            { text: "Cancel all my future plans. 🙅‍♀️", correct: false, roast: "Close, but that assumes Sanns actually made plans in the first place!" },
-            { text: "Plans? I never had those. 💅", correct: true, roast: "SPOT ON! Zero commitments, 100% peace, supreme horizontal supremacy." }
+            { text: "'Sorry, I had a sudden family thing come up'", correct: false, roast: "Too formal! Everyone knows you're just wrapped like a burrito watching TikTok." },
+            { text: "'I'm already in my pajamas, so legally I cannot leave'", correct: true, roast: "100% valid legal defense. Once the pajamas are on, you belong to the bed." },
+            { text: "'My phone died and I didn't see the text until Tuesday'", correct: false, roast: "Classic, but everyone knows your phone is practically glued to your hand in bed." }
           ]
         },
         {
           id: 4,
           type: "standard",
-          question: "Scientists discovered a new species: Sanns under a blanket. What's its natural habitat?",
+          question: "Someone knocks on your door while you're cozy in bed. What do you do?",
           options: [
-            { text: "Bed. 🛏️", correct: false, roast: "Too limited! Sanns can nap in any coordinates across the globe." },
-            { text: "Sofa. 🛋️", correct: false, roast: "A secondary habitat, but not the definitive truth." },
-            { text: "Anywhere nobody expects productivity. 🦥", correct: true, roast: "EXACTLY! David Attenborough: 'Observe the rare Sanns, master of zero exertion...'" }
+            { text: "Freeze, hold my breath, and pretend the house is abandoned", correct: true, roast: "Real. You turn into a statue until you hear footsteps walk away." },
+            { text: "Get up right away and greet them with enthusiasm", correct: false, roast: "Never in recorded human history has Sanns answered a door with enthusiasm." },
+            { text: "Text them 'not home' while laying 6 feet from the door", correct: false, roast: "Hilarious, but moving your hands to text risks giving away your position." }
           ]
         },
         {
           id: 5,
           type: "standard",
-          question: "Your biggest contribution to society is...?",
+          question: "What is Sanns' definition of a high-intensity workout?",
           options: [
-            { text: "Spreading happiness. 🌸", correct: false, roast: "You definitely do, but let's be medically honest about your energy levels!" },
-            { text: "Being a professional sleeper. 😴", correct: false, roast: "An honorable profession, but Sanns' true cultural legacy is much deeper." },
-            { text: "Making 'I'll do it later' a lifestyle. 💅", correct: true, roast: "TRUTH BOMB! Why do today what you can postpone until the year 2049?" }
+            { text: "Reaching for the phone charger without falling off the bed", correct: true, roast: "Olympic level gymnastics! That stretch tests every core muscle you have." },
+            { text: "Going for an early morning 5K jog", correct: false, roast: "You wouldn't even jog if you were being chased by a bear. You'd ask the bear to nap first." },
+            { text: "Walking to the fridge and deciding nothing looks good", correct: false, roast: "A strong contender, but reaching the charger without getting up is your true peak athleticism." }
           ]
         },
         {
           id: 6,
           type: "standard",
-          question: "Your best friend creates an entire website just to expose you. Your reaction?",
+          question: "Why did it take you 7 hours to reply to my text yesterday?",
           options: [
-            { text: "Block them. Immediately. 🚫", correct: false, roast: "You wouldn't dare! Plus you'd have to find where your phone is under the blanket first." },
-            { text: "Laugh because everything is true. 😂💖", correct: false, roast: "You definitely will laugh, but the true Sanns formula has an essential next step!" },
-            { text: "Rate the website five stars, then take a nap. ⭐⭐⭐⭐⭐", correct: true, roast: "CHEF'S KISS! A 5-star review followed by an immediate 6-hour slumber. Iconic." }
+            { text: "I replied in my head and genuinely thought I sent it", correct: true, roast: "The classic Sanns move! You had a whole conversation with me in your imagination while asleep." },
+            { text: "I was super busy with important meetings", correct: false, roast: "Important meetings with your ceiling fan and pillow, maybe." },
+            { text: "I didn't have my phone on me", correct: false, roast: "Your phone hasn't left your hand since 2018. Try again." }
           ]
         },
         {
           id: 7,
           type: "standard",
-          question: "Who is the main character here?",
+          question: "What is the biggest life lesson you have mastered so far?",
           options: [
-            { text: "Sanvitha, the pink princess. 🎀", correct: false, roast: "True, but only half the story!" },
-            { text: "Sanns, CEO of Sleeping Industries. 💼", correct: false, roast: "Also true, but why settle for just one crown?" },
-            { text: "Both. Obviously, I'm iconic. 💅👑", correct: true, roast: "UNAPOLOGETIC MAIN CHARACTER TRUTH! The Queen takes both titles!" }
+            { text: "Never put off until tomorrow what you can delay indefinitely", correct: true, roast: "A true master of procrastination. Why stress today when you can stress next month?" },
+            { text: "Hard work and early mornings build character", correct: false, roast: "Don't lie to yourself. You wouldn't wake up early even if there was free money on the floor." },
+            { text: "Drink 8 glasses of water every day", correct: false, roast: "That would require getting out of bed to use the bathroom. Denied." }
           ]
         },
         {
           id: 8,
           type: "emergency_dodging",
-          question: "Emergency! Your bed and your best friend need you at the same time. Choose wisely."
+          question: "Emergency scenario: Your bed and your best friend both need your attention right now. What are you doing?"
         }
       ],
 
       // Stage 6 Finale & Letter
       finale: {
-        letter: `Dearest Sanns (Sanvitha),
+        letter: `Hey Sanns,
 
-Look, we tease you endlessly about your world-record sleeping hours, your legendary horizontal lifestyle, and the fact that your blanket seems to have legal custody of you...
+All jokes aside about your Olympic-level sleeping habits, your habit of ignoring texts for six hours, and how your bed has essentially adopted you...
 
-But in all seriousness, you are genuinely one of the most incredible, funny, caring, and irreplaceable best friends anyone could ever wish for. Life is infinitely brighter, funnier, and more joyful whenever you're around (even if we have to wait 3 hours for you to wake up and reply to a text!).
+You're genuinely one of the best people and one of the closest friends I could ask for. Having you around makes everything so much funnier, easier, and better (even when I have to wait half a day for you to finally wake up and reply).
 
-Thank you for always being your iconic, sweet, hilariously sleepy self. You truly are the supreme pink princess! 💖✨`,
+Thanks for always being yourself, being such a great friend, and never failing to make me laugh. Now please go take another nap—you've earned it!`,
         coupons: [
           {
-            title: "🛌 1 Free Guilt-Free 14-Hour Nap",
-            desc: "Redeemable anytime: Sanns may immediately disconnect from the universe and snooze without answering questions."
+            title: "Guilt-Free 12-Hour Nap Pass",
+            desc: "Redeemable anytime: Turn your phone on 'Do Not Disturb' and ignore everyone with zero guilt."
           },
           {
-            title: "🚫 'Bed Gravity Too Strong' Pass",
-            desc: "Permits Sanns to cancel any morning plan if the blanket refuses to release her from its warm embrace."
+            title: "Last-Minute Plan Cancellation Pass",
+            desc: "Valid for when you already agreed to go out, but your bed suddenly feels way too comfortable."
           },
           {
-            title: "🧋 Unlimited Bestie Boba & Vent Voucher",
-            desc: "Redeemable with me for free food, coffee/boba, and unlimited gossip whenever you finally wake up!"
+            title: "Free Food & Bestie Hangout Voucher",
+            desc: "Good for coffee, food, and talking about everything whenever you finally decide to wake up."
           },
           {
-            title: "👑 Royal Immunity Pass",
-            desc: "Valid forever: Excuses Sanns from all house chores, early alarms, and productive behavior."
+            title: "Late Text Immunity Pass",
+            desc: "Valid forever: Excuses you from replying to texts on time because you were asleep or answered in your head."
           }
         ]
       }
@@ -2457,7 +2457,7 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
             bestieBtn.style.transform = `scale(${scale})`;
 
             if (this.fleeAttempts === 3) {
-              toast.innerHTML = `😏 <em>Look at you trying to click 'Bed'! The universe won't let you abandon your bestie that easily!</em>`;
+              toast.innerHTML = `<em>Look at you trying to pick the bed over me. Nice try, not happening!</em>`;
               toast.style.display = 'block';
             }
           };
@@ -2468,14 +2468,14 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
           fleeBtn.onclick = () => {
             sound.playBuzzer();
             this.triggerScreenShake();
-            toast.innerHTML = `❌ <strong>NOPE:</strong> Bed gravity rejected your betrayal! Bestie is waiting!`;
+            toast.innerHTML = `❌ <strong>Nope:</strong> You can't abandon your best friend that easily.`;
             toast.style.display = 'block';
           };
 
           compromiseBtn.onclick = () => {
             sound.playBuzzer();
             this.triggerScreenShake();
-            toast.innerHTML = `❌ <strong>WRONG:</strong> Sanns would never leave her warm bed just to return 10 minutes later! Try the ultimate bestie solution!`;
+            toast.innerHTML = `❌ <strong>10 minutes?</strong> You'd yawn after 3 minutes and ask to go home. Pick the real answer!`;
             toast.style.display = 'block';
           };
 
@@ -2483,7 +2483,7 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
             sound.playPrincessChime();
             confetti.burst(110);
             bestieBtn.classList.add('correct-glow');
-            toast.innerHTML = `✨ <strong>CORRECT & CANONICAL!</strong> BESTIE COMES TO BED FOR A NAP! Friendship and laziness united in holy matrimony! 😭🛏️💖`;
+            toast.innerHTML = `✨ <strong>CORRECT!</strong> Best friend comes over and we both do absolutely nothing. Peak friendship.`;
             toast.style.display = 'block';
             nextBtn.style.display = 'inline-flex';
             fleeBtn.style.pointerEvents = 'none';
@@ -2561,7 +2561,7 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
         sound.playPrincessChime();
         confetti.burst(80);
 
-        desc.textContent = `Score: ${this.arcadeScore} pts! Her Royal Highness Sanns has officially aced this nap challenge!`;
+        desc.textContent = `Score: ${this.arcadeScore} pts! Not bad for someone who spent the last 12 hours horizontal.`;
         modal.style.display = 'flex';
       }
 
@@ -2621,11 +2621,11 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
         const btn = document.getElementById('spamPrincessAlarmBtn');
 
         const quotes = [
-          '"5 more hours..."',
-          '"Blanket is holding me hostage!"',
-          '"Is the sun even allowed to be up?"',
-          '"I\'m calling the police on this alarm!"',
-          '"Can somebody bring my bed outside?"'
+          '"5 more minutes..."',
+          '"Can somebody just bring my bed outside?"',
+          '"I replied in my head, I swear."',
+          '"My blanket won\'t let me leave."',
+          '"Why does the morning exist?"'
         ];
 
         fill.style.width = '15%';
@@ -2645,8 +2645,8 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
           setTimeout(() => avatar.style.transform = 'scale(1) rotate(0deg)', 100);
 
           if (this.princessWakeup >= 100) {
-            avatar.textContent = '😳👑';
-            dialogue.textContent = '"WHO TURNED ON THE LIGHTS?! THE PRINCESS IS AWAKE!"';
+            avatar.textContent = '😳';
+            dialogue.textContent = '"OKAY I\'M UP! Stop the alarm!"';
             this.endArcadeGame();
           }
         };
@@ -2732,12 +2732,12 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
           card.className = 'girly-coupon';
           card.innerHTML = `
             <div>
-              <div class="coupon-head-label">ROYAL PRIVILEGE • NEVER EXPIRES</div>
+              <div class="coupon-head-label">BEST FRIEND PASS • NEVER EXPIRES</div>
               <h4 class="coupon-pink-title">${c.title}</h4>
               <p class="coupon-pink-desc">${c.desc}</p>
             </div>
             <button class="btn-soft coupon-claim-btn" style="width: 100%;">
-              <span>🎟️ CLAIM COUPON</span>
+              <span>CLAIM PASS</span>
             </button>
           `;
 
@@ -2745,7 +2745,7 @@ Thank you for always being your iconic, sweet, hilariously sleepy self. You trul
           btn.onclick = () => {
             sound.playPrincessChime();
             confetti.burst(80);
-            btn.innerHTML = '<span>✅ REDEEMED IN BESTIE SYSTEM!</span>';
+            btn.innerHTML = '<span>✅ SAVED & REDEEMED!</span>';
             btn.classList.remove('btn-soft');
             btn.classList.add('btn-pink');
             btn.disabled = true;
